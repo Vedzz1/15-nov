@@ -1,0 +1,18 @@
+; Program to demonstrate loading of sections, symbols, and instructions
+; This is a simple example with sections and symbols
+
+.section text
+@start
+MOV A, B
+ADD A, C
+SUB D, A
+
+.section data
+@variable1
+M 0x1000
+M 0x2000
+
+.section bss
+@temp
+JMP start
+
